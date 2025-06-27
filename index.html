@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ DAKE - Аранжировщик • DJ • Музыкант</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Анимированный фон -->
+    <div class="animated-bg"></div>
+    
+    <!-- Анимированные ноты -->
+    <div class="music-notes">
+        <div class="note note-1"><i class="fas fa-music"></i></div>
+        <div class="note note-2"><i class="fas fa-music"></i></div>
+        <div class="note note-3"><i class="fas fa-music"></i></div>
+        <div class="note note-4"><i class="fas fa-music"></i></div>
+        <div class="note note-5"><i class="fas fa-music"></i></div>
+        <div class="note note-6"><i class="fas fa-music"></i></div>
+        <div class="note note-7"><i class="fas fa-music"></i></div>
+        <div class="note note-8"><i class="fas fa-music"></i></div>
+    </div>
+    
+    <!-- Движущиеся частицы -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">DJ DAKE</div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-lang="nav_home">Главная</a>
+                <a href="#about" class="nav-link" data-lang="nav_about">О себе</a>
+                <a href="#achievements" class="nav-link" data-lang="nav_achievements">Достижения</a>
+                <a href="#concerts" class="nav-link" data-lang="nav_concerts">Концерты</a>
+                <a href="#music" class="nav-link" data-lang="nav_music">Музыка</a>
+                <a href="#contact" class="nav-link" data-lang="nav_contact">Контакты</a>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang-btn="kz">KZ</button>
+                <button class="lang-btn active" data-lang-btn="ru">RU</button>
+                <button class="lang-btn" data-lang-btn="en">EN</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Шапка сайта -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">DJ DAKE</h1>        
+            <p class="hero-subtitle" data-lang="hero_subtitle">Аранжировщик • DJ • Музыкант</p>
+            <button class="cta-button" onclick="scrollToSection('music')">
+                <i class="fas fa-play"></i> <span data-lang="hero_cta">Послушать музыку</span>
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- О себе -->
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title" data-lang="about_title">О себе</h2>
+        <div class="about-content">
+            <div class="about-media">
+                <div class="video-container">
+                    <video class="profile-video" controls preload="metadata" poster="/placeholder.svg?height=300&width=500">
+                        <source src="djdakevideo.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+            </div>
+            <div class="about-text">
+                <h3 data-lang="about_heading">Добро пожаловать в мир музыки!</h3>
+                <p data-lang="about_p1">DJ DAKE (Даулет Нуржанов) - Аранжировщик (саунд-продюсер) и диджей. Аранжировал ряд песен популярных казахстанских поп-звезд (МузАрт, Алтынай Жорабаева, Макпал Жунисова, Досымжан Танатаров, группа «Байтерек»). DJ DAKE - талантливый продюсер, который раздвинул границы этно-попа и EDM на современной казахской музыкальной сцене. В его треках мировоззренческая мелодика казахской домбры обрела новое звучание с современными хаус, турецкими мотивами. В частности, такие песни и композиции, как «Dombra komei», «Sálem bul Qazaqstan», «Mahabbat», «Alqissa», «Jana zaman», «Oriental miracle», «Iligay» и другие, выпущенные в 2023–2024 годах, находят свой путь к сердцам поклонников.</p>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label" data-lang="about_stat1">Лет опыта</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">300+</span>
+                        <span class="stat-label" data-lang="about_stat2">Мероприятий</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label" data-lang="about_stat3">Треков</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Достижения -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title" data-lang="achievements_title">Достижения</h2>
+            <div class="achievements-gallery">
+                <div class="achievement-item" onclick="openModal('modal1')">
+                    <img src="images/medal1.jpg" alt="Медаль 1">
+                    <div class="achievement-overlay">
+                        <h4 data-lang="achievement1_title">Лучший DJ года</h4>
+                        <p data-lang="modal1_desc">Награда за выдающиеся достижения</p>
+                    </div>
+                </div>
+                <div class="achievement-item" onclick="openModal('modal2')">
+                    <img src="images/medal2.jpg" alt="Медаль 2">
+                    <div class="achievement-overlay">
+                        <h4 data-lang="achievement2_title">Премия за аранжировку</h4>
+                        <p data-lang="modal2_desc">Признание мастерства</p>
+                    </div>
+                </div>
+                <div class="achievement-item" onclick="openModal('modal3')">
+                    <img src="images/medal3.jpg" alt="Медаль 3">
+                    <div class="achievement-overlay">
+                        <h4 data-lang="achievement3_title">Международный фестиваль</h4>
+                        <p data-lang="modal3_desc">Участник престижного фестиваля</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Концерты и звёзды -->
+    <section id="concerts" class="concerts">
+        <div class="container">
+            <h2 class="section-title" data-lang="concerts_title">Концерты и сотрудничество</h2>
+            <div class="concerts-grid">
+                <div class="concert-card">
+                    <div class="concert-video-container">
+                        <video class="concert-video" controls preload="metadata" poster="/placeholder.svg?height=200&width=300">
+                            <source src="concert/mudvideo.mp4" type="video/mp4">
+                            <source src="videos/concert1.webm" type="video/webm">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+                    <div class="concert-info">
+                        <h4>Nege Solai</h4>
+                        <p>DJ Dake X Farida</p>
+                    </div>
+                </div>
+                <div class="concert-card">
+                    <div class="concert-video-container">
+                        <video class="concert-video" controls preload="metadata" poster="/placeholder.svg?height=200&width=300">
+                            <source src="concert/mutvideo.mp4" type="video/mp4">
+                            <source src="videos/concert2.webm" type="video/webm">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+                    <div class="concert-info">
+                        <h4>Orintal Miracle</h4>
+                        <p>DJ Dake x Bkhytzhan</p>
+                    </div>
+                </div>
+                <div class="concert-card">
+                    <div class="concert-video-container">
+                        <video class="concert-video" controls preload="metadata" poster="/placeholder.svg?height=200&width=300">
+                            <source src="concert/videoklip2.mp4" type="video/mp4">
+                            <source src="videos/concert3.webm" type="video/webm">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+                    <div class="concert-info">
+                        <h4>Zhana Zaman</h4>
+                        <p>DJ Dake x Bkhytzhan</p>
+                    </div>
+                </div>
+                <div class="concert-card">
+                    <div class="concert-video-container">
+                        <video class="concert-video" controls preload="metadata" poster="/placeholder.svg?height=200&width=300">
+                            <source src="videos/concert4.mp4" type="video/mp4">
+                            <source src="videos/concert4.webm" type="video/webm">
+                        </video>
+                    </div>
+                    <div class="concert-info">
+                        <h4>Музыкальный фестиваль</h4>
+                        <p>Выступление на открытой сцене</p>
+                    </div>
+                </div>
+                <div class="concert-card">
+                    <div class="concert-video-container">
+                        <video class="concert-video" controls preload="metadata" poster="/placeholder.svg?height=200&width=300">
+                            <source src="videos/concert5.mp4" type="video/mp4">
+                            <source src="videos/concert5.webm" type="video/webm">
+                        </video>
+                    </div>
+                    <div class="concert-info">
+                        <h4>Частное мероприятие</h4>
+                        <p>Эксклюзивный сет для VIP гостей</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music-player">
+                <div class="playlist">
+                    <!-- Трек 1 -->
+                    <div class="track-item" data-src="musics/arukyz.mp3">
+                        <div class="track-header">
+                            <div class="track-cover">
+                                <img src="coveres/ару кыз.jpg" alt="Обложка трека 1" class="cover-img">
+                            </div>
+                            <div class="track-info">
+                                <h4 data-lang="track1_title">Auyldagy Aru Kyz</h4>
+                                <p>DJ DAKE</p>
+                            </div>
+                            <div class="track-controls">
+                                <button class="track-play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="track-player">
+                            <div class="track-progress-container">
+                                <div class="track-progress-bar">
+                                    <div class="track-progress"></div>
+                                </div>
+                                <div class="track-time-info">
+                                    <span class="track-current-time">0:00</span>
+                                    <span class="track-total-time">--:--</span>
+                                </div>
+                            </div>
+                            <div class="track-volume-container">
+                                <i class="fas fa-volume-up"></i>
+                                <input type="range" class="track-volume-slider" min="0" max="100" value="50">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Трек 2 -->
+                    <div class="track-item" data-src="musics/ertegialemi.mp3">
+                        <div class="track-header">
+                            <div class="track-cover">
+                                <img src="coveres/ертегилер алеми.jpg" alt="Обложка трека 2" class="cover-img">
+                            </div>
+                            <div class="track-info">
+                                <h4 data-lang="track2_title">Ertigi Alemi</h4>
+                                <p>DJ DAKE</p>
+                            </div>
+                            <div class="track-controls">
+                                <button class="track-play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="track-player">
+                            <div class="track-progress-container">
+                                <div class="track-progress-bar">
+                                    <div class="track-progress"></div>
+                                </div>
+                                <div class="track-time-info">
+                                    <span class="track-current-time">0:00</span>
+                                    <span class="track-total-time">--:--</span>
+                                </div>
+                            </div>
+                            <div class="track-volume-container">
+                                <i class="fas fa-volume-up"></i>
+                                <input type="range" class="track-volume-slider" min="0" max="100" value="50">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Трек 3 -->
+                    <div class="track-item" data-src="musics/iligai.mp3">
+                        <div class="track-header">
+                            <div class="track-cover">
+                                <img src="coveres/илигай.jpg" alt="Обложка трека 3" class="cover-img">
+                            </div>
+                            <div class="track-info">
+                                <h4 data-lang="track3_title">Iligai</h4>
+                                <p>DJ DAKE</p>
+                            </div>
+                            <div class="track-controls">
+                                <button class="track-play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="track-player">
+                            <div class="track-progress-container">
+                                <div class="track-progress-bar">
+                                    <div class="track-progress"></div>
+                                </div>
+                                <div class="track-time-info">
+                                    <span class="track-current-time">0:00</span>
+                                    <span class="track-total-time">--:--</span>
+                                </div>
+                            </div>
+                            <div class="track-volume-container">
+                                <i class="fas fa-volume-up"></i>
+                                <input type="range" class="track-volume-slider" min="0" max="100" value="50">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Трек 4 -->
+                    <div class="track-item" data-src="musics/mahabbat.mp3">
+                        <div class="track-header">
+                            <div class="track-cover">
+                                <img src="coveres/махаббат.jpg" alt="Обложка трека 4" class="cover-img">
+                            </div>
+                            <div class="track-info">
+                                <h4 data-lang="track4_title">Mahabbat</h4>
+                                <p>DJ DAKE</p>
+                            </div>
+                            <div class="track-controls">
+                                <button class="track-play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="track-player">
+                            <div class="track-progress-container">
+                                <div class="track-progress-bar">
+                                    <div class="track-progress"></div>
+                                </div>
+                                <div class="track-time-info">
+                                    <span class="track-current-time">0:00</span>
+                                    <span class="track-total-time">--:--</span>
+                                </div>
+                            </div>
+                            <div class="track-volume-container">
+                                <i class="fas fa-volume-up"></i>
+                                <input type="range" class="track-volume-slider" min="0" max="100" value="50">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Трек 5 -->
+                    <div class="track-item" data-src="musics/jaina.mp3">
+                        <div class="track-header">
+                            <div class="track-cover">
+                                <img src="coveres/jaina.jpg" alt="Обложка трека 5" class="cover-img">
+                            </div>
+                            <div class="track-info">
+                                <h4 data-lang="track5_title">Jaina</h4>
+                                <p>DJ DAKE</p>
+                            </div>
+                            <div class="track-controls">
+                                <button class="track-play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="track-player">
+                            <div class="track-progress-container">
+                                <div class="track-progress-bar">
+                                    <div class="track-progress"></div>
+                                </div>
+                                <div class="track-time-info">
+                                    <span class="track-current-time">0:00</span>
+                                    <span class="track-total-time">--:--</span>
+                                </div>
+                            </div>
+                            <div class="track-volume-container">
+                                <i class="fas fa-volume-up"></i>
+                                <input type="range" class="track-volume-slider" min="0" max="100" value="50">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Telegram CTA Section -->
+            <div class="telegram-cta">
+                <div class="telegram-cta-content">
+                    <h3 data-lang="telegram_cta_title">Послушайте мои другие треки в моем Telegram канале</h3>
+                    <p data-lang="telegram_cta_desc">Больше эксклюзивной музыки, ремиксов и новинок ждут вас в моем Telegram канале!</p>
+                    <a href="https://t.me/dj_dake1984" class="telegram-btn" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                        <span data-lang="telegram_btn_text">Перейти в Telegram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-lang="contact_title">Контакты</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-lang="contact_heading">Свяжитесь со мной</h3>
+                    <p data-lang="contact_desc">Готов обсудить ваше мероприятие и создать незабываемую атмосферу!</p>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (999) 123-45-67</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+7 (999) 123-45-67</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>dj.dake@email.com</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <h3 data-lang="social_heading">Социальные сети</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-soundcloud"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p data-lang="footer_copyright">&copy; 2024 DJ DAKE. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Модальные окна для достижений -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="/placeholder.svg?height=400&width=300" alt="Медаль">
+            <h3 data-lang="modal1_title">Лучший DJ года 2023</h3>
+            <p data-lang="modal1_desc">Награда получена за выдающиеся достижения в области диджеинга и создание уникальной атмосферы на мероприятиях.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="/placeholder.svg?height=400&width=300" alt="Медаль">
+            <h3 data-lang="modal2_title">Премия за лучшую аранжировку 2022</h3>
+            <p data-lang="modal2_desc">Признание профессионального мастерства в создании музыкальных аранжировок.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="/placeholder.svg?height=400&width=300" alt="Медаль">
+            <h3 data-lang="modal3_title">Участник международного фестиваля 2021</h3>
+            <p data-lang="modal3_desc">Сертификат участника престижного международного музыкального фестиваля.</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="/placeholder.svg?height=400&width=300" alt="Диплом">
+            <h3 data-lang="modal4_title">Сертификат профессионального DJ 2020</h3>
+            <p data-lang="modal4_desc">Официальный сертификат, подтверждающий профессиональную квалификацию диджея.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
