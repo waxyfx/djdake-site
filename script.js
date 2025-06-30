@@ -22,12 +22,6 @@ const translations = {
     about_stat2: "Іс-шара",
     about_stat3: "Трек",
 
-    // Достижения
-    achievements_title: "Жетістіктер",
-    achievement1_title: "Жылдың үздік DJ-і",
-    achievement2_title: "Үздік аранжировка үшін сыйлық",
-    achievement3_title: "Халықаралық фестиваль қатысушысы",
-    achievement4_title: "Кәсіби DJ сертификаты",
 
     // Концерты
     concerts_title: "Клиптер",
@@ -63,17 +57,7 @@ const translations = {
     // Футер
     footer_copyright: "© 2024 DJ DAKE. Барлық құқықтар қорғалған.",
 
-    // Модальные окна
-    modal1_title: "2023 жылдың үздік DJ-і",
-    modal1_desc:
-      "Диджеинг саласындағы ерекше жетістіктер және іс-шараларда бірегей атмосфера жасағаны үшін алынған сыйлық.",
-    modal2_title: "2022 жылы үздік аранжировка үшін сыйлық",
-    modal2_desc: "Музыкалық аранжировкалар жасаудағы кәсіби шеберлікті мойындау.",
-    modal3_title: "2021 жылы халықаралық фестиваль қатысушысы",
-    modal3_desc: "Беделді халықаралық музыкалық фестивальдің қатысушы сертификаты.",
-    modal4_title: "2020 жылы кәсіби DJ сертификаты",
-    modal4_desc: "Диджейдің кәсіби біліктілігін растайтын ресми сертификат.",
-
+  
     // Telegram CTA
     telegram_cta_title: "Менің Telegram арнамдағы басқа тректерімді тыңдаңыз",
     telegram_cta_desc: "Менің Telegram арнамда сізді эксклюзивті музыка, ремикстер мен жаңалықтар күтіп тұр!",
@@ -102,12 +86,6 @@ const translations = {
     about_stat2: "Мероприятий",
     about_stat3: "Треков",
 
-    // Достижения
-    achievements_title: "Достижения",
-    achievement1_title: "Лучший DJ года",
-    achievement2_title: "Премия за лучшую аранжировку",
-    achievement3_title: "Участник международного фестиваля",
-    achievement4_title: "Сертификат профессионального DJ",
 
     // Концерты
     concerts_title: "Клипы",
@@ -143,17 +121,7 @@ const translations = {
     // Футер
     footer_copyright: "© 2024 DJ DAKE. Все права защищены.",
 
-    // Модальные окна
-    modal1_title: "Лучший DJ года 2023",
-    modal1_desc:
-      "Награда получена за выдающиеся достижения в области диджеинга и создание уникальной атмосферы на мероприятиях.",
-    modal2_title: "Премия за лучшую аранжировку 2022",
-    modal2_desc: "Признание профессионального мастерства в создании музыкальных аранжировок.",
-    modal3_title: "Участник международного фестиваля 2021",
-    modal3_desc: "Сертификат участника престижного международного музыкального фестиваля.",
-    modal4_title: "Сертификат профессионального DJ 2020",
-    modal4_desc: "Официальный сертификат, подтверждающий профессиональную квалификацию диджея.",
-
+  
     // Telegram CTA
     telegram_cta_title: "Послушайте мои другие треки в моем Telegram канале",
     telegram_cta_desc: "Больше эксклюзивной музыки, ремиксов и новинок ждут вас в моем Telegram канале!",
@@ -182,12 +150,6 @@ const translations = {
     about_stat2: "Events",
     about_stat3: "Tracks",
 
-    // Достижения
-    achievements_title: "Achievements",
-    achievement1_title: "Best DJ of the Year",
-    achievement2_title: "Best Arrangement Award",
-    achievement3_title: "International Festival Participant",
-    achievement4_title: "Professional DJ Certificate",
 
     // Концерты
     concerts_title: "Clips",
@@ -223,16 +185,7 @@ const translations = {
     // Футер
     footer_copyright: "© 2024 DJ DAKE. All rights reserved.",
 
-    // Модальные окна
-    modal1_title: "Best DJ of the Year 2023",
-    modal1_desc: "Award received for outstanding achievements in DJing and creating a unique atmosphere at events.",
-    modal2_title: "Best Arrangement Award 2022",
-    modal2_desc: "Recognition of professional mastery in creating musical arrangements.",
-    modal3_title: "International Festival Participant 2021",
-    modal3_desc: "Certificate of participation in a prestigious international music festival.",
-    modal4_title: "Professional DJ Certificate 2020",
-    modal4_desc: "Official certificate confirming professional DJ qualification.",
-
+  
     // Telegram CTA
     telegram_cta_title: "Listen to my other tracks on my Telegram channel",
     telegram_cta_desc: "More exclusive music, remixes and new releases are waiting for you on my Telegram channel!",
