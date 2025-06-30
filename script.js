@@ -36,7 +36,7 @@ const translations = {
     // Музыка
     music_title: "Менің музыкам",
     track1_title: "Auyldagy Aru Kyz",
-    track2_title: "Ertigi Alemi",
+    track2_title: "Ertegi Alemi",
     track3_title: "Iligai",
     track4_title: "Mahabbat",
     track5_title: "Jaina",
@@ -100,7 +100,7 @@ const translations = {
     // Музыка
     music_title: "Моя музыка",
     track1_title: "Auyldagy Aru Kyz",
-    track2_title: "Ertigi Alemi",
+    track2_title: "Ertegi Alemi",
     track3_title: "Iligai",
     track4_title: "Mahabbat",
     track5_title: "Jaina",
@@ -164,7 +164,7 @@ const translations = {
     // Музыка
     music_title: "My Music",
     track1_title: "Auyldagy Aru Kyz",
-    track2_title: "Ertigi Alemi",
+    track2_title: "Ertegi Alemi",
     track3_title: "Iligai",
     track4_title: "Mahabbat",
     track5_title: "Jaina",
