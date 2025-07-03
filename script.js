@@ -36,11 +36,13 @@ const translations = {
     // Музыка
     music_title: "Менің музыкам",
     track1_title: "Auyldagy Aru Kyz",
-    track2_title: "Ertegi Alemi",
+    track2_title: "Ertigi Alemi",
     track3_title: "Iligai",
     track4_title: "Mahabbat",
     track5_title: "Jaina",
-
+    track6_title: "Dombra (remix)",
+    track8_title: "Alqissa",
+    
     // Загрузка музыки
     upload_title: "Музыканы қалай қосу керек:",
     upload_step1: 'Сайттың түбірінде "music" қалтасын жасаңыз',
@@ -100,10 +102,13 @@ const translations = {
     // Музыка
     music_title: "Моя музыка",
     track1_title: "Auyldagy Aru Kyz",
-    track2_title: "Ertegi Alemi",
+    track2_title: "Ertigi Alemi",
     track3_title: "Iligai",
     track4_title: "Mahabbat",
     track5_title: "Jaina",
+    track6_title: "Dombra (remix)",
+    track8_title: "Alqissa",
+    
 
     // Загрузка музыки
     upload_title: "Как добавить музыку:",
@@ -164,10 +169,12 @@ const translations = {
     // Музыка
     music_title: "My Music",
     track1_title: "Auyldagy Aru Kyz",
-    track2_title: "Ertegi Alemi",
+    track2_title: "Ertigi Alemi",
     track3_title: "Iligai",
     track4_title: "Mahabbat",
     track5_title: "Jaina",
+    track6_title: "Dombra (remix)",
+    track8_title: "Alqissa",
 
     // Загрузка музыки
     upload_title: "How to add music:",
