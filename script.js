@@ -22,7 +22,6 @@ const translations = {
     about_stat2: "Іс-шара",
     about_stat3: "Трек",
 
-
     // Концерты
     concerts_title: "Клиптер",
     concert1_title: "Жазғы фестиваль 2023",
@@ -42,7 +41,7 @@ const translations = {
     track5_title: "Jaina",
     track6_title: "Dombyra (remix)",
     track8_title: "Alqissa",
-    
+
     // Загрузка музыки
     upload_title: "Музыканы қалай қосу керек:",
     upload_step1: 'Сайттың түбірінде "music" қалтасын жасаңыз',
@@ -59,7 +58,6 @@ const translations = {
     // Футер
     footer_copyright: "© 2024 DJ DAKE. Барлық құқықтар қорғалған.",
 
-  
     // Telegram CTA
     telegram_cta_title: "Менің Telegram арнамдағы басқа тректерімді тыңдаңыз",
     telegram_cta_desc: "Менің Telegram арнамда сізді эксклюзивті музыка, ремикстер мен жаңалықтар күтіп тұр!",
@@ -88,7 +86,6 @@ const translations = {
     about_stat2: "Мероприятий",
     about_stat3: "Треков",
 
-
     // Концерты
     concerts_title: "Клипы",
     concert1_title: "Летний фестиваль 2023",
@@ -108,7 +105,6 @@ const translations = {
     track5_title: "Jaina",
     track6_title: "Dombyra (remix)",
     track8_title: "Alqissa",
-    
 
     // Загрузка музыки
     upload_title: "Как добавить музыку:",
@@ -126,7 +122,6 @@ const translations = {
     // Футер
     footer_copyright: "© 2024 DJ DAKE. Все права защищены.",
 
-  
     // Telegram CTA
     telegram_cta_title: "Послушайте мои другие треки в моем Telegram канале",
     telegram_cta_desc: "Больше эксклюзивной музыки, ремиксов и новинок ждут вас в моем Telegram канале!",
@@ -154,7 +149,6 @@ const translations = {
     about_stat1: "Years of Experience",
     about_stat2: "Events",
     about_stat3: "Tracks",
-
 
     // Концерты
     concerts_title: "Clips",
@@ -192,7 +186,6 @@ const translations = {
     // Футер
     footer_copyright: "© 2024 DJ DAKE. All rights reserved.",
 
-  
     // Telegram CTA
     telegram_cta_title: "Listen to my other tracks on my Telegram channel",
     telegram_cta_desc: "More exclusive music, remixes and new releases are waiting for you on my Telegram channel!",
